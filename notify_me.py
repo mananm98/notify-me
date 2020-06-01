@@ -12,11 +12,10 @@ def notify_me(line,cell):
     try:
        exec(cell)
        end = time.time()
-       print(end - start)
+       print("\n\nExecution time --> ",round(end - start,2),"Seconds")
        display(Audio(url='https://sound.peal.io/ps/audios/000/000/537/original/woo_vu_luvub_dub_dub.wav', autoplay=True))
     except Exception as e:
        print(type(e).__name__, " : ",e)
        end = time.time()
-       print(end - start)
+       print("\n\nExecution time --> ", round(end - start,2),"Seconds")
        display(Audio(url='https://sound.peal.io/ps/audios/000/000/537/original/woo_vu_luvub_dub_dub.wav', autoplay=True))
-       
